@@ -1,0 +1,196 @@
+
+/*Redimensionar imagen*/
+#yo{
+    width:50%;
+}
+#yo:hover{ /*Al pasar el cursor sobre la imagen, esta aumentara un 80% en tamaño.*/
+    width: 130%;
+}
+/*Importar tipografia Minecraftia*/
+@font-face {
+    font-family: 'Minecraftia';
+    src: url("Minecraftia-Regular.ttf");
+}
+@font-face {
+    font-family: 'Orion';
+    src: url('Orion.ttf');
+}
+@font-face{
+    font-family:'Quicksand';
+    src:url('Quicksand-SemiBold.tff');
+}
+/*Cambiar colores a etiquetas*/
+h1{
+    color: #372B1C;
+    font-family: 'Minecraftia';
+    font-size: 40px;
+}
+h2{
+    color:#EFF0F5;
+    font-family: 'Minecraftia';
+    font-size: 70px;
+}
+h3{
+    color:#EFF0F5;
+    font-family: 'Minecraftia';
+    font-size: 20px;
+}
+header{
+    background-color: #84D3F5;
+    padding: 10px;
+    margin: 10px;
+}
+body{
+    background-color: #7B6F61;
+    margin:0;
+    padding:0;
+}
+
+/*Esto se lee como lo siguiente: al aplicar la etiqueta 'ul' dentro de un 'nav'; los cambios
+seran unicamente aplicados al 'ul'*/
+nav{
+    background-color: #273136;
+    padding: 20px;
+    margin: 5px;
+}
+nav ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex; /*Indicar que la etiqueta se movera de acuerdo a los elementos de la pantalla*/
+}
+nav li{
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none; /*Elimina el subrayado del texto.*/
+    color:#DFE5FC;
+}
+nav a:hover{ /*Cambia el elemento al pasar el cursor encima de el.*/
+    background-color: #FAA45C;
+    color:#273136;
+}
+/*Aqui dejamos de modificar el NAV*/
+section{
+    background-color: #BB9465;
+    width: 70%;
+}
+/*Modificar propiedades del aside*/
+aside{
+    padding:20px;
+    background-color:#232527;
+    width: 25%;
+    float: right; /*Convertir a un elemento flotante hacia la derecha*/
+}
+aside p{
+    font-family:'Orion';
+    font-size:15px;
+}
+    /* Cambiar texto del aside.*/
+#p1:hover{
+    font-size: 50%;
+    font-family: 'Minecraftia';
+    color:#FAA45C;
+    width: 30%;
+}
+#p2:hover{
+    font-size: 50%;
+    font-family: 'Minecraftia';
+    color:#FAA45C;
+    width: 30%;
+}
+#p3:hover{
+    font-size: 50%;
+    font-family: 'Minecraftia';
+    color:#FAA45C;
+    width: 30%;
+}#p4:hover{
+    font-size: 50%;
+    font-family: 'Minecraftia';
+    color:#FAA45C;
+    width: 30%;
+}#p5:hover{
+    font-size: 50%;
+    font-family: 'Minecraftia';
+    color:#FAA45C;
+    width: 30%;
+}
+/* Terminar cambios en texto del aside*/
+a{
+    color:#DFE5FC;
+}
+p{
+    color:#DDE1FE;
+    font-size: 'Quicksand';
+}
+br{
+    background-color: #343252;
+}
+li{
+    color:#E2EEFF;
+}
+footer{
+    background-color: #84D3F5;
+    color: #372B1C;
+    font-family: 'Minecraftia';
+    font-size:40px;
+    text-align: center; /*Centrar el texto*/
+    padding: 5px 0; /*Colocar 5px en el 'top' y 'botton'. No afecta 'left' y 'right'.
+                    para hacerlo viceversa, colocar el 0 seguido de los 'px' (padding: 0 5px;)*/
+    clear: both; /*Independizar la etiqueta "footer". Ningun cambio afectara a la etiqueta "footer".*/
+}
+footer p{
+    color: #372B1C;
+}
+/*Clases, declarar con punto (.)*/
+.autobiografia{
+    color:red;
+}
+.fondo{
+    color:blue;
+}
+.tabulacion:first-letter {
+	margin-left: 15px;
+}
+/*Mi.28/FEB/2024 . Linea del tiempo*/
+.contenedor{
+    margin: 50px;
+    width:80%;
+}
+.header1{
+    text-align:center;
+}
+div h2{
+    margin-bottom: 5px;
+    font-family:'Quicksand';
+    font-size:30px;
+}
+div p{
+    font-family:'Orion';
+    font-size:20px;
+}
+/*A continuación se encuentra el codigo para agregar las
+    barras de seguimiento para la linea del tiempo.*/
+.caja{
+    margin-bottom: 10px;
+    position: relative; /*¿Que es esto?*/
+}
+.caja::before{
+    content:''; /*Contenido vacio*/
+    position: absolute; /*¿Que es esto?*/
+    width:3px;
+    height:120%;
+    background: #84D3F5;
+    left:-15px;
+    top:10px;
+}
+.caja::after{
+    content:'';
+    position: absolute;
+    width:20px;
+    height:20px;
+    background: #84D3F5;
+    border-radius: 50%;
+    left:-23px;
+    top:5px;
+}
