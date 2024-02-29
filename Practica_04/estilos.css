@@ -1,0 +1,76 @@
+
+/*Redimensionar imagen*/
+#yo{
+    width:100%;
+}
+/*Importar tipografia Minecraftia*/
+@font-face {
+    font-family: 'Minecraftia';
+    src: url("Minecraftia-Regular.ttf");
+}
+@font-face {
+    font-family: 'Orion';
+    src: url('Orion.ttf');
+}
+/*Cambiar colores a etiquetas*/
+h1{
+    color: #372B1C;
+    font-family: 'Minecraftia';
+    font-size: 40px;
+}
+h2{
+    color:#EFF0F5;
+    font-family: 'Minecraftia';
+    font-size: 70px;
+}
+h3{
+    color:#EFF0F5;
+    font-family: 'Minecraftia';
+    font-size: 20px;
+}
+header{
+    background-color: #84D3F5;
+    padding: 10px;
+    margin: 10px;
+}
+body{
+    background-color: #7B6F61;
+    margin:0;
+    padding:0;
+}
+nav{
+    background-color: #B5A38F;
+    padding: 20px;
+    margin: 5px;
+}
+aside{
+    background-color:#4C93BA;
+    width: 25%;
+    padding: 20px;
+    margin: 5px;
+}
+section{
+    background-color: #BB9465;
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+}
+a{
+    color:#DFE5FC;
+}
+p{
+    color:#DDE1FE;
+}
+br{
+    background-color: #343252;
+}
+li{
+    color:#E2EEFF;
+}
+/*Clases, declarar con punto (.)*/
+.auto{
+    color:red;
+}
+.fondo{
+    color:blue;
+}
